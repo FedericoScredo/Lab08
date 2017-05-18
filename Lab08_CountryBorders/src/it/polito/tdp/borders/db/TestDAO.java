@@ -13,6 +13,14 @@ public class TestDAO {
 
 		System.out.println("Lista di tutte le nazioni:");
 		List<Country> countries = dao.loadAllCountries();
+		for(Country c:countries)
+			System.out.println(c);
+		
+		System.out.println("Lista di tutti i confini:");
+		List<Border> borders = dao.getCountryPairs(1991);
+		for(Border b:borders){
+			System.out.println(b.toString());
+		}
 
 	}
 }

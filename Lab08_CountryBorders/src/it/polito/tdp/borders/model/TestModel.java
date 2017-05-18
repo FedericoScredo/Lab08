@@ -8,8 +8,15 @@ public class TestModel {
 
 		System.out.println("TestModel -- TODO");
 		
-//		System.out.println("Creo il grafo relativo al 2000");
-//		model.createGraph(2000);
+		System.out.println("Creo il grafo relativo al 2000");
+		model.creaGrafo(2000);
+		
+		System.out.println("Stampo il grafo");
+		for(String s:model.stampa()){
+			System.out.println(s);
+		}
+		
+		System.out.println("Numero componenti connesse: "+model.numeroComponentiConnessi());
 		
 //		List<Country> countries = model.getCountries();
 //		System.out.format("Trovate %d nazioni\n", countries.size());
